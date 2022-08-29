@@ -1,1 +1,2 @@
-
+Contains two files; PSampling and Estimating_Pi_Jupyter. PSampling is a python file which uses monte carlo sampling to estimate pi, with adjustable amount of randomly generated points. Estimating_Pi_Jupyter constains the same code but in a jupyter file with an introduction to monte carlo. 
+The jupyter notebook is for the purpose of education, and is designed to be shown in a classroom setting, while the python file could be used for the interested student coder or someone wanting to edit and toy with the code in their own editing environment. 
