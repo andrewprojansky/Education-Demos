@@ -14,6 +14,29 @@ import matplotlib.pyplot as plt
 import random
 import numpy as np
 
+"""
+monte_run: for number of sampling points, randomly generates position and
+checks if inside or outside a circle
+----------
+Inputs:
+    depth: int
+        integer count of the number of random points to be generated
+
+Outputs:
+    xpos_I: list
+        list of x values for points inside circle
+    ypos_I: list
+        list of y values for points inside circle, corresponding to xpos_I
+    xpos_O: list
+        list of x values for points outside circle
+    ypos_O: list
+        list of y values for points outside circle, corresponding to xpos_O
+    pi: float
+        approximation of pi based on 4 times the ration of points inside circle
+        versus total points 
+
+
+"""
 def monte_run(depth):
 
     xpos_I = []
@@ -48,6 +71,7 @@ def display(xpos_I, ypos_I, xpos_O, ypos_O, pi, depth):
     plt.title('Pi = ' + str(pi))
     plt.show()
 
+###
 depth = 1000
 xpos_I, ypos_I, xpos_O, ypos_O, pi = monte_run(depth)
 display(xpos_I, ypos_I, xpos_O, ypos_O, pi, depth)
